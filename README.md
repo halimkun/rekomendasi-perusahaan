@@ -1,0 +1,2 @@
+# Rekomendasi Perusahaan (Streamlit)
+Aplikasi yang dibuat untuk project skripsi saya. Aplikasi ini dibuat untuk memudahkan mahasiswa dalam mencari rekomendasi perusahaan yang sesuai dengan jurusan dan keahlian mereka.
