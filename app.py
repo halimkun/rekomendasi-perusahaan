@@ -2,10 +2,10 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 from config import config
-from home import home
-from about import about
-from rekomendasi import rekomendasi
-from bantuan import bantuan
+from page.home import home
+from page.about import about
+from page.rekomendasi import rekomendasi
+from page.bantuan import bantuan
 
 # page config
 st.set_page_config(
@@ -26,7 +26,20 @@ def main():
             orientation="horizontal",
             icons=config().get_option_icon(),
             styles={
-                "nav-link": {"--hover-color": "#9580ff82", "transition": "all 0.2s ease-in-out", "display": "flex"},
+                "nav":{
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "justify-content": "center",
+                    "align-items": "flex-start",
+                },
+                "nav-item":{
+                    "width": "100% !important"
+                },
+                "nav-link": {
+                    "--hover-color": "#9580ff82", 
+                    "transition": "all 0.2s ease-in-out", 
+                    "display": "flex",
+                },
             }
         )
 
